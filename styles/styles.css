@@ -1,6 +1,18 @@
+:root {
+    --primary-color: steelblue;
+    --secondary-color: darkblue;
+    --background-light: #DCEEF9;
+    --text-color: #004080;
+    --border-color: rgba(0, 0, 0, 0.2);
+    --shadow-color: gray;
+    --padding: 10px;
+    --image-width-small: 150px;
+    --image-width-large: 200px;
+}
+
 nav {
-    background-color: steelblue;
-    padding: 10px;
+    background-color: var(--primary-color);
+    padding: var(--padding);
 }
 
 nav a {
@@ -10,15 +22,15 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--secondary-color);
 }
 
 main img {
-    width: 150px;
+    width: var(--image-width-small);
     height: auto;
     border: 1px solid black;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--shadow-color);
 }
 
 p {
@@ -32,15 +44,15 @@ main {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* 1️⃣ */;
+    border: 1px solid var(--border-color); /* 1️⃣ */;
     padding: 1rem;
-    background-color: #DCEEF9;
-    color: #004080;
+    background-color: var(--background-light);
+    color: var(--text-color);
     text-align: center;
 }
 
 aside img {
-    width: 200px;
+    width: var(--image-width-large);
     height: auto;
 }
 
