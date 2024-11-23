@@ -1,39 +1,111 @@
-/* Import Google Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
-
-/* variables for colors */
+/* Define CSS variables */
 :root {
     --primary-color: #4C648A;
     --secondary-color: #E0A52B;
     --accent1-color: #C3CFDA;
     --accent2-color: #FFEAC2;
-    --font-color: #000;
+    --font-color: #333333;
+    --background-color: #F5F5F5;
+    --overlay-color: rgba(255, 255, 255, 0.8);
 }
 
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    color: var(--primary-color);
-}
-
-p {
-    font-family: 'Roboto', 'sans-serif';
-    color: var(--font-color);
-    line-height: 1.6;
-    font-size: 1rem;
-}
-
+/* Style headings */
 h1 {
-    font-size: 2.5rem;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 3em;
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
+    position: absolute;
 }
 
-a img {
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 1em;
+}
+
+/* Style paragraphs */
+p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    line-height: 2rem;
+    color: var(--text-color);
+}
+
+/* Apply a max-width to limit the page width */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Remove underlines from social media image links */
+.social-links a {
     text-decoration: none;
-    display: inline-block;
 }
 
+/* Social links icon styling */
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Header styling */
+header img {
+    width: 200px; /* Adjust the logo size */
+}
+
+/* Hero section */
 .hero {
-    background-image: url('../images/rafting4.jpg');
+    position: relative;
+    height: 500px;
+    background-image: url('../images/hero-image.jpg');
     background-size: cover;
     background-position: center;
-    height: 300px;
+    color: var(--font-color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+/* Article styling */
+article {
+    position: absolute;
+    max-width: 1810px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(200, 200, 200, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+article img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-right: 0; /* Remove default margins */
 }
