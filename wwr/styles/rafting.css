@@ -30,3 +30,10 @@ a img {
     text-decoration: none;
     display: inline-block;
 }
+
+.hero {
+    background-image: url('../images/rafting4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
