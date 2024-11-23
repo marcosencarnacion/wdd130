@@ -124,5 +124,5 @@ article img {
     max-width: 300px;
     border-radius: 10px;
     margin-right: 0; /* Remove default margins */
-    float: left;
+    float: right;
 }
