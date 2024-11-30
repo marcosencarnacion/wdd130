@@ -62,12 +62,13 @@ p {
 }
 
 .grid {
-    display: grid;
+    display: flex;
     grid-template-columns: 2fr 1fr; /* Two columns: main takes 2x space, aside takes 1x space */
     gap: 1rem; /* Space between main and aside */
     max-width: 840px;
     margin: 0 auto;
     padding: 1rem;
+    justify-content: space-evenly;
 }
 
 main {
