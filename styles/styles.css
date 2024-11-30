@@ -16,7 +16,7 @@
     --image-width-large: 200px;
 }
 
-header, grid, footer {
+header, .grid, footer {
     max-width: 1000px;
     margin: 0 auto;
 }
