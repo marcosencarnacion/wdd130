@@ -16,7 +16,15 @@
     --image-width-large: 200px;
 }
 
+header, grid, footer {
+    max-width: 1000;
+    margin: 0 auto;
+}
+
 nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: var(--primary-color);
     padding: var(--padding);
 }
@@ -24,12 +32,18 @@ nav {
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
+    border-bottom: 3px solid var(--primary-color); /* New thicker border with a custom color */
+    padding-bottom: 0.5rem; /* Moves the border farther from the text */
+    margin-bottom: 1.5rem; /* Adds space between the border and the next element */
     color: var(--secondary-color);
-    margin: 1rem;
+    text-align: center; /* Optional: Centers the h1 for better alignment */
 }
 
 main img {
@@ -38,39 +52,36 @@ main img {
     border: 1px solid black;
     padding: 1px;
     box-shadow: 0 0 30px var(--shadow-color);
-    float: right;
-    margin-top: -55px;
-    margin-left: 1rem;
+    float: right; /* Keep the image floated to the right */
+    margin: 0 0 1rem 1rem; /* Adds space below the image */
 }
-
 p {
     padding: 0;
     margin: 1rem;
+    line-height: 1.5;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two columns: main takes 2x space, aside takes 1x space */
+    gap: 1rem; /* Space between main and aside */
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 main {
-    max-width: 840px;
+    grid-column: 1; /* Main occupies the first column */
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid var(--border-color); /* 1️⃣ */;
-    padding: 1rem;
-    background-color: var(--background-light);
-    color: var(--text-color);
-    text-align: center;
-    position: relative;
-}
-
-aside h2 {
-    position: absolute;
+    grid-column: 2; /* Aside occupies the second column */
+    align-self: start; /* Aligns aside to the top */
 }
 
 aside img {
     width: var(--image-width-large);
     height: auto;
-
 }
 
 footer {
@@ -92,4 +103,11 @@ footer {
 
 .indent {
     padding-left: 2rem;
+    line-height: 1.5;
 }
+
+.container {
+    max-width: 840px; /* Limita el ancho máximo del contenido */
+    margin: 0 auto;   /* Centra el contenedor horizontalmente */
+    padding: 0 20px;  /* Añade un poco de espacio interno a los lados */
+  }
