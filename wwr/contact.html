@@ -97,23 +97,23 @@
                     <!-- User's Email -->
                      <div class="form-group">
                         <label for="email">Your Email:</label>
-                        <input type="email" id="email" required placeholder="Enter your email address">
+                        <input type="email" id="email" name="email" required placeholder="Enter your email address">
                      </div>
 
                      <!-- Purpose of Message -->
                      <fieldset>
                         <legend>Purpose of Message:</legend>
                         <div class="form-group">
-                            <label>
-                                <input type="radio" name="purpose" value="general-inquiry" required>
+                            <label for="general-inquiry">
+                                <input type="radio" id="general-inquiry" name="purpose" value="general-inquiry" required>
                                 General Inquiry
                             </label>
-                            <label>
-                                <input type="radio" name="purpose" value="reservation-question">
+                            <label for="reservation-question">
+                                <input type="radio" id="reservation-question" name="purpose" value="reservation-question">
                                 Reservation Question
                             </label>
-                            <label>
-                                <input type="radio" name="purpose" value="Website-suggestion">
+                            <label for="website-suggestion">
+                                <input type="radio" id="website-suggestion" name="purpose" value="Website-suggestion">
                                 Website Suggestion
                             </label>
                         </div>
@@ -127,8 +127,8 @@
 
                       <!-- Subscribe to Newsletter -->
                        <div class="form-group">
-                        <label>
-                            <input type="checkbox" name="subscribe">
+                        <label for="subscribe">
+                            <input type="checkbox" id="subscribe" name="subscribe">
                             Please subscribe me to the monthly newsletter
                         </label>
                        </div>
