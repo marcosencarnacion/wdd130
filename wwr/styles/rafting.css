@@ -525,3 +525,15 @@ legend {
     background-color: #cc8b27;
     transform: translateY(-2px);
 }
+
+.wireframe-link {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 3rem;
+}
+
+.wireframe-link:hover {
+    text-decoration: underline;
+    color: var(--secondary-color)
+}
