@@ -537,3 +537,12 @@ legend {
     text-decoration: underline;
     color: var(--secondary-color)
 }
+
+.wireframe-link:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
