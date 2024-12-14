@@ -692,31 +692,22 @@ legend {
 
 /* Gallery Display*/
 
-.intro .image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-
-}
-
 .image-gallery .gallery-container {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 20px; 
-    justify-content: center;
+    display: grid; /* Ensure the container also uses grid */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Space between images */
+    justify-items: center; /* Centering content within grid */
 }
 
 .image-gallery figure {
-    flex: 1 1 calc(33.333% - 20px); 
-    max-width: calc(33.333% - 20px);
+    max-width: 100%; /* Make figures responsive */
     box-sizing: border-box; 
-    text-align: center; 
+    text-align: center;
 }
 
 .intro .image-gallery figure img {
-    width: 100%; 
-    height: 270px; 
+    width: 100%;
+    height: 270px;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -755,7 +746,7 @@ legend {
 
 @media (max-width: 480px) {
     .intro .image-gallery {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
     }
 }
 
