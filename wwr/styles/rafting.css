@@ -654,6 +654,7 @@ legend {
     background-color: #4C688D;
 }
 
+/*Intro Section*/
 .intro {
     text-align: center;
     padding: 60px 20px;
@@ -700,7 +701,7 @@ legend {
 }
 
 .image-gallery figure {
-    max-width: 100%; /* Make figures responsive */
+    max-width: 100%;
     box-sizing: border-box; 
     text-align: center;
 }
@@ -751,7 +752,7 @@ legend {
 }
 
 .newsletter {
-    background-color: #f0f8ff; /* Soft background color */
+    background-color: #f0f8ff; 
     padding: 2em;
     text-align: center;
 }
@@ -791,7 +792,7 @@ legend {
     padding: 1em 2em;
     font-size: 1.2em;
     font-weight: bold;
-    background-color: #cc8b27; /* Green button */
+    background-color: #cc8b27;
     color: #291e1e;
     border: none;
     border-radius: 5px;
@@ -800,4 +801,153 @@ legend {
 
 .newsletter button:hover {
     background-color: #9a6f1d; /* Darker green on hover */
+}
+
+
+/* Specific Hero Section Styling for the Trips Page */
+.trips-hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url('../images/trips-hero1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 15px;
+    transform: scale(1); 
+    transition: transform 1.5s ease; 
+}
+
+
+.trips-hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.trips-hero h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 10px;
+  width: 100%;
+  color: white;
+}
+
+.trips-hero h1 {
+    font-size: 3.5em;
+    margin: 0;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    width: 97%;
+}
+
+.trips-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: white;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*Our Trips */
+/* Trips Section Specific Styles */
+main .trip-descriptions {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+main .trip-descriptions .trip {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+main .trip-descriptions .trip img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+main .trip-descriptions .trip-info {
+    width: 55%;
+}
+
+main .trip-descriptions .trip h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+main .trip-descriptions .trip p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+main .trip-descriptions .cta-button {
+    background-color: #cc8b27;
+    color: #291e1e;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+main .trip-descriptions .cta-button:hover {
+    background-color: #9a6f1d;
+}
+
+main .trip-descriptions .trip img:hover {
+    transform: scale(1.05); /* Scale image slightly on hover */
+}
+
+/* Trip Table Specific Styles */
+main .trip-table {
+    padding: 30px;
+    background-color: #fff;
+    margin-top: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+main .trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+main .trip-table th,
+main .trip-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+main .trip-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+main .trip-table td {
+    font-size: 1rem;
 }
