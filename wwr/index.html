@@ -40,7 +40,7 @@
             <section class="newsletter">
                 <h2>Sign Up for Our Newsletter</h2>
                 <p>Stay updated on our latest rafting trips, promotions, and more!</p>
-                <form action="submit_form.php" method="post">
+                <form action="submit_form.php" method="post" id="newsletter-form">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
                     
@@ -48,6 +48,14 @@
                     <input type="email" id="email" name="email" required>
                     
                     <button type="submit">Sign Up for Newsletter</button>
+
+                    <!-- Hidden Checkbox -->
+                     <input type="checkbox" id="form-submitted" class="hidden-checkbox">
+
+                    <!-- Hidden Thank You Message -->
+                    <div class="thank-you-message">
+                        <p>Thank you for signing up! We will keep you updated with exciting trips!</p>
+                    </div>
                 </form>
             </section>
 

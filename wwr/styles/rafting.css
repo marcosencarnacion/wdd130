@@ -803,6 +803,23 @@ legend {
     background-color: #9a6f1d; /* Darker green on hover */
 }
 
+.hidden-checkbox {
+    display: none;
+}
+
+.thank-you-message {
+    display: none;
+}
+
+form:valid .thank-you-message {
+    display: block;
+    margin-top: 20px;
+    padding: 4px;
+    background-color: #5ea870; 
+    color: #1a1919;
+    border-radius: 5px;
+    text-align: center;
+}
 
 /* Specific Hero Section Styling for the Trips Page */
 .trips-hero {
